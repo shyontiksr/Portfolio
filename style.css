@@ -1,0 +1,433 @@
+* {box-sizing: border-box;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    padding-bottom: 10px;
+    
+}
+
+h1 {
+    padding-top: 40px;
+    font-family: 'Splash', cursive;
+    letter-spacing: 5px;
+}
+
+.heart-icon:hover {
+    color: tan;
+}
+
+.shy-name {
+    color: tan;
+}
+
+
+.nav-item {
+    font-size: 20px;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    color: tan;
+}
+
+@media (max-width: 576px) {
+    .header-nav {
+        text-align: center;
+
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .about-pic {
+        /* position: relative; */
+        /* bottom: 145px; */
+        /* right: 105px; */
+    }
+        
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .header-nav {
+        text-align: center;
+
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+
+    .header-nav {
+        text-align: center;
+
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+    .header-nav {
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .header-nav {
+        text-align: center;
+
+    }
+}
+
+.home-section {
+    padding-top: 120px;
+}
+
+.home-pic {
+    padding: 10px;
+    /* border: 1px solid #372420; */
+    border: 1px solid silver;
+    border-style: dashed;
+}
+
+/* source for shake image: https://www.tutorialspoint.com/how-to-shake-wiggle-an-image-with-css */
+
+.home-pic:hover {
+    animation: shakeImg 9.0s;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes shakeImg {
+    0% { transform: translate(1px, 1px) rotate(5deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(-10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-20deg); }
+    70% { transform: translate(3px, 1px) rotate(-25deg); }
+    90% { transform: translate(1px, 2px) rotate(10deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+    }
+
+
+h2 {
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-family: 'Splash', cursive;
+    letter-spacing: 10px;
+    /* border-bottom: 1px solid #372420; */
+}
+
+
+
+
+/* About page */
+
+
+@media (max-width: 360px) {
+    .about-h1-2 {
+        visibility: hidden;
+        /* border: 2px solid blue; */
+    }
+
+    .about-h1 {
+        visibility: hidden;
+    }
+
+    .about-content{
+        /* border: 3px solid green; */
+        position: relative;
+        bottom: 250px;
+    }
+}
+
+.about-h1-2 {
+    font-size: 80px;
+    position: relative;
+    top: 60px;
+    /* right: 3px; */
+}
+
+.about-h1 {
+    color: tan;
+    /* color: aliceblue; */
+    position: relative;
+    bottom: 77px;
+    left: 3px;
+    letter-spacing: 5px;
+    font-size: 72px;
+}
+
+
+
+
+.about-text {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 24px;
+    padding: 30px 20px;
+    border: 1px solid silver;
+    border-style: dashed;
+    /* letter-spacing: .5px; */
+}
+
+
+/* source for shake image: https://www.tutorialspoint.com/how-to-shake-wiggle-an-image-with-css */
+
+
+.about-text:hover {
+    animation: shakeImg 2.5s;
+    animation-iteration-count: infinite;
+}
+    @keyframes shakeImg {
+    0% { transform: translate(1px, 1px) rotate(5deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(-10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-20deg); }
+    70% { transform: translate(3px, 1px) rotate(-25deg); }
+    90% { transform: translate(1px, 2px) rotate(10deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+}
+.about-pic {
+    /* border: 2px solid #372420; */
+    border: 1px solid silver;
+    border-style: dashed;
+    padding: 10px;
+    
+}
+
+/* source for shake image: https://www.tutorialspoint.com/how-to-shake-wiggle-an-image-with-css */
+
+
+.about-pic:hover {
+    animation: shakeImg 2.5s;
+    animation-iteration-count: infinite;
+}
+    @keyframes shakeImg {
+    0% { transform: translate(1px, 1px) rotate(5deg); }
+    20% { transform: translate(-3px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(-10deg); }
+    50% { transform: translate(-1px, 2px) rotate(-20deg); }
+    70% { transform: translate(3px, 1px) rotate(-25deg); }
+    90% { transform: translate(1px, 2px) rotate(10deg); }
+    100% { transform: translate(1px, -2px) rotate(-10deg); }
+}
+
+
+
+
+/* Projects Page */
+
+
+.projects-section {
+    padding-top: 40px;
+}
+
+.projects-h1 {
+    font-size: 90px;
+    position: relative;
+    top: 60px;
+    /* right: 3px; */
+}
+
+.projects-h1-2 {
+    color: tan;
+    /* color: aliceblue; */
+    position: relative;
+    bottom: 80px;
+    letter-spacing: 5px;
+    font-size: 75px;
+}
+
+.card-body {
+    background-color: gainsboro;
+    border-top: 3px solid tan;
+}
+
+
+.card {
+    border: 4px solid tan;
+}
+
+@media (max-width: 575.98px) {
+    .one-card, .two-card, .three-card, .four-card {
+        /* border: 2px solid pink; */
+        padding: 30px 20px;
+
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .one-card, .two-card, .three-card, .four-card {
+        /* border: 2px solid blue; */
+        padding: 30px 20px;
+
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 992px) {
+    .one-card, .two-card, .three-card, .four-card {
+        /* border: 2px solid green; */
+        padding: 30px 20px;
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .one-card, .two-card, .three-card, .four-card {
+        /* border: 2px solid red; */
+        padding: 30px 20px;
+        width: 50%;
+
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .one-card, .two-card, .three-card, .four-card {
+        /* border: 2px solid orangered; */
+        padding: 30px 20px;
+        width: 50%;
+    }
+}
+
+/* source for glow-on-hover: https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
+
+.glow-on-hover {
+    /* width: 220px;
+    height: 50px; */
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+/* Resume Page */
+
+.resume-h1 {
+    font-size: 90px;
+    position: relative;
+    top: 60px;
+    /* right: 3px; */
+}
+
+.resume-h1-2 {
+    color: tan;
+    /* color: aliceblue; */
+    position: relative;
+    bottom: 80px;
+    letter-spacing: 5px;
+    font-size: 75px;
+}
+
+.resume-section {
+    border: 2px solid #372420;
+    border-style: dashed;
+    padding: 10px;
+}
+
+
+.footer-nav-link:hover {
+    color: tan;
+}
+
+@media (max-width: 576px) {
+    .footer-nav {
+        /* border: 2px solid blue; */
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+
+    .footer-nav{
+        text-align: center;
+        /* border: 2px solid purple; */
+    }
+}
+
+@media (min-width: 991.98px) and (max-width: 1400px) {
+    .footer-nav{
+        /* display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 500px; */
+        text-align: center;
+        /* border: 2px solid red; */
+    }
+}  
+
+@media (min-width: 1400.98px) {
+    .footer-nav{
+        text-align: center;
+    }
+}
